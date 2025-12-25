@@ -61,8 +61,13 @@
 
   <main class="list">
     <% matches.forEach(m=> { %><a class="match-card"
-        href="/stream/<%= m.League.toLowerCase().trim() %>/<%= m.MatchID %>/<%= (m.Team1+'-vs-'+m.Team2).toLowerCase().replace(/\s+/g,'-') %>"><img
-          src="<%= m.LeagueLogo || m['League logo'] %>" class="icon">
+        href="/stream/<%= m.League.toLowerCase().trim() %>/<%= m.MatchID %>/<%= (m.Team1+'-vs-'+m.Team2).toLowerCase().replace(/\s+/g,'-') %>">
+        <img 
+  src="<%= m.LeagueLogo || m['League logo'] %>" 
+  class="icon"
+  alt="<%= m.League %> live streams logo"
+/>
+
         <div class="info">
           <div class="league">
             <%= m.League %>
@@ -172,6 +177,5 @@
   </footer>
 
 </body>
-
 
 </html>
