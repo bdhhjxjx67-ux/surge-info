@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    Sportsurge | Free Live Sports Streaming NFL, NBA, UFC, MMA & Boxing
+  </title>
+
+  <meta name="description"
+    content="Watch free live sports streams on Sportsurge in HD quality. Stream NFL, NBA, UFC, MMA, Boxing, Soccer and more online with no signup or subscription required.">
+
+  <meta name="keywords"
+    content="sportsurge, sportsurge live, free sports streaming, nfl live stream, nba live stream, ufc live stream, mma streams, boxing streams, soccer live">
+
+  <link rel="canonical" href="https://sportsurge.info/">
+
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+  <nav class="top-nav">
+    <div class="nav-center">
+
+      <a href="/" class="brand">Sportsurge</a>
+
+      <a href="/league/nfl" class="top-league">NFL</a>
+      <a href="/league/nba" class="top-league">NBA</a>
+      <a href="/league/ufc" class="top-league">UFC</a>
+      <a href="/league/mma" class="top-league">MMA</a>
+
+      <a href="/league/mlb">MLB</a>
+      <a href="/league/nhl">NHL</a>
+      <a href="/league/soccer">Soccer</a>
+      <a href="/league/cfl">CFL</a>
+      <a href="/league/wwe">WWE</a>
+
+    </div>
+  </nav>
+
+  <header class="header">
+    <h1>Welcome to Sportsurge</h1>
+    <div class="header-border"></div>
+
+    <p class="bold">
+      Sportsurge: Free Live Sports Streaming in HD
+    </p>
+
+    <p class="light">
+      Please share this link to help improve visibility on search engines.
+    </p>
+  </header>
+
+  <section class="section">
+    <h2>Sports Streams and Schedule</h2>
+    <div class="section-border"></div>
+  </section>
+
+  <main class="list">
+    <% matches.forEach(m=> { %><a class="match-card"
+        href="/stream/<%= m.League.toLowerCase().trim() %>/<%= m.MatchID %>/<%= (m.Team1+'-vs-'+m.Team2).toLowerCase().replace(/\s+/g,'-') %>"><img
+          src="<%= m.LeagueLogo || m['League logo'] %>" class="icon">
+        <div class="info">
+          <div class="league">
+            <%= m.League %>
+          </div>
+          <div class="title">
+            <%= m.Team1 %> vs <%= m.Team2 %>
+          </div>
+          <div class="time">
+            <%= m.Date %> • <%= m.Time %>
+          </div>
+        </div>
+      </a>
+      <% }) %>
+
+        <section class="article-box">
+
+          <h2>About Sportsurge</h2>
+          <p>
+            Sportsurge is a trusted platform that provides free access to live sports
+            streaming for fans around the world. Whether you follow NFL, NBA, UFC,
+            MMA, Boxing, Soccer, or other major leagues, Sportsurge makes it easy
+            to watch live games without subscriptions or sign-ups.
+          </p>
+
+          <h2>Why Choose Sportsurge for Live Sports Streaming?</h2>
+
+          <h3>Free Live Sports Streaming</h3>
+          <p>
+            Sportsurge allows users to stream live sports events completely free.
+            There are no hidden charges, no premium plans, and no registration
+            required to access live matches.
+          </p>
+
+          <h3>No Account or Signup Required</h3>
+          <p>
+            One of the biggest advantages of Sportsurge is instant access. Simply
+            visit the site, select your favorite match, and start watching live
+            without sharing any personal information.
+          </p>
+
+          <h3>High-Quality HD Streams</h3>
+          <p>
+            Sportsurge offers high-quality streaming links that deliver smooth
+            playback with minimal buffering. The platform works well on desktop,
+            tablet, and mobile devices.
+          </p>
+
+          <h3>Wide Coverage of Sports Leagues</h3>
+          <p>
+            From American football and basketball to combat sports and international
+            soccer, Sportsurge covers a wide range of sports leagues and events
+            worldwide.
+          </p>
+
+          <h2>How to Watch Live Sports on Sportsurge</h2>
+
+          <ul>
+            <li>Open the Sportsurge website</li>
+            <li>Select your preferred sports league</li>
+            <li>Choose a live match</li>
+            <li>Click a working stream link and enjoy</li>
+          </ul>
+
+          <h2>Popular Sports Available on Sportsurge</h2>
+
+          <ul>
+            <li>NFL Live Streams</li>
+            <li>NBA Live Games</li>
+            <li>UFC & MMA Fights</li>
+            <li>Boxing Matches</li>
+            <li>Soccer Live Streaming</li>
+          </ul>
+
+          <h2>Conclusion</h2>
+          <p>
+            Sportsurge is a reliable choice for sports fans who want free and easy
+            access to live sports streaming. With broad sports coverage, HD quality
+            streams, and a simple user experience, Sportsurge continues to be a
+            popular destination for watching live sports online.
+          </p>
+
+        </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+
+      <p class="copyright">
+        © 2025 Sportsurge. All rights reserved.
+      </p>
+
+      <div class="footer-links">
+        <a href="https://buffstreams.lol/">BuffStreams</a>
+        <a href="https://streameasttv.us/">Streameast</a>
+        <a href="https://totalsportek.sbs/">Totalsportek</a>
+        <a href="https://stream2watch.cyou/">Stream2Watch</a>
+        <a href="/privacy">Privacy Policy</a>
+        <a href="/dmca">DMCA</a>
+        <a href="/contact">Contact</a>
+      </div>
+
+      <p class="powered">
+        Sportsurge provides access to live sports streams including NFL, NBA,
+        UFC, MMA, Boxing, Soccer and more.
+      </p>
+
+    </div>
+  </footer>
+
+</body>
+
+</html>

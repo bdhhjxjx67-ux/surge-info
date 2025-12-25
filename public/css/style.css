@@ -1,0 +1,434 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: radial-gradient(circle at top, #0f1d2d, #050a14);
+  color: #fff;
+}
+
+.top-nav {
+  background: #000;
+  padding: 10px 0;
+}
+
+.nav-center {
+  max-width: 1100px;
+  margin: auto;
+  text-align: center;
+}
+
+.nav-center a {
+  color: white;
+  margin: 0 5px;
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none;
+
+  display: inline-block;
+  padding: 6px 12px;              
+  box-sizing: border-box;        
+
+  transition: background-color 0.2s ease, color 0.2s ease;
+    border-radius: 8px;
+cursor: pointer;
+}
+
+.nav-center a:hover {
+  background-color: #2d6a7a;
+  color: white;
+  border-radius: 8px;
+}
+
+.brand {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+
+  display: inline-block;
+  padding: 3px 12px;              
+  box-sizing: border-box;         
+
+  transition: background-color 0.2s ease, color 0.2s ease;
+  cursor: pointer;
+    border-radius: 8px;
+
+}
+
+.brand:hover {
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 8px;
+}
+
+.header {
+  text-align: center;
+  padding: 25px 10px 15px;
+}
+
+.header-border {
+  width: 300px;
+  height: 1px;
+  margin: 10px auto;
+}
+
+.bold {
+  font-size: 13px;
+}
+
+.header h1 {
+  display: inline-block;
+  padding: 10px 456px;
+  margin: 0;
+  border-top: 1px solid #2a3d52;
+  border-bottom: 1px solid #2a3d52;
+}
+
+.light {
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.section {
+  max-width: 1300px;
+  margin: 20px auto 10px;
+}
+
+.section h2 {
+  font-size: 20px;
+  color: #9adfff;
+  font-weight: 600;
+}
+
+.section-border {
+  height: 1px;
+  background: #1f354a;
+  margin-top: 6px;
+}
+
+.list {
+  max-width: 1300px;
+  margin: 0px auto;
+  padding-bottom: 40px;
+}
+
+.match-card {
+  display: flex;
+  align-items: center;
+  width: 97.5%;
+  background: #1f4b5a;
+  margin: 14px 0;
+  padding: 14px 16px;
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.match-card:hover {
+  background: #2d6a7a;
+  transform: scale(1.02);
+}
+
+.icon {
+  width: 36px;
+  margin-right: 14px;
+}
+
+.info {
+  line-height: 1.4;
+}
+
+.league {
+  font-size: 11px;
+  color: #9adfff;
+  margin-bottom: 3px;
+  font-weight: 600;
+}
+
+.title {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.time {
+  font-size: 11px;
+  opacity: 0.8;
+  font-weight: 600;
+}
+
+.stream-box {
+  margin: 20px auto;
+  max-width: 900px;
+    border-radius: 10px;
+
+}
+
+.stream-box iframe {
+  width: 100%;
+  height: 480px;
+  border-radius: 10px;
+}
+
+.seo-article {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #222;
+  border: 1px solid #333;
+  line-height: 1.7;
+  border-radius: 8px;
+}
+
+.seo-article h2 {
+  margin-bottom: 10px;
+}
+
+.seo-article p {
+  margin-bottom: 12px;
+  color: #d2dbea;
+}
+
+.seo-article hr {
+  border: none;
+  border-top: 1px solid #2a3d52;
+  margin: 15px 0;
+}
+
+.small {
+  font-size: 13px;
+  color: #9fb3cc;
+}
+
+.site-footer {
+  margin-top: 20px;
+  background: #000;
+  border-top: 1px solid #333;
+}
+
+.footer-inner {
+  max-width: 1200px;
+  margin: auto;
+  padding: 25px 10px;
+  text-align: center;
+}
+
+.footer-inner p {
+  color: #cbd5e1;
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+.footer-links {
+  margin: 8px 0;
+}
+
+.footer-links a {
+  color: #e5e7eb;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 13px;
+  transition: 0.2s;
+}
+
+.footer-links a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.powered {
+  font-size: 12px;
+  color: #94a3b8;
+}
+
+
+.article-box {
+  max-width: 1300px;
+  margin: 20px auto;   
+  background: #222;
+  border-radius: 10px;
+  padding: 25px;
+  color: #cbd5e1;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+
+.article-box h2 {
+  color: #ffffff;
+  font-size: 18px;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #1f2a3c;
+  padding-bottom: 6px;
+}
+
+.article-box h3 {
+  color: #e5e7eb;
+  font-size: 15px;
+  margin-top: 18px;
+}
+
+.article-box p {
+  margin-bottom: 12px;
+}
+
+.article-box ul {
+  margin-left: 18px;
+  margin-bottom: 15px;
+}
+
+.article-box ul li {
+  margin-bottom: 6px;
+}
+
+.article-box strong {
+  color: #ffffff;
+}
+
+.no-matches-box {
+  max-width: 900px;
+  margin: 40px auto;
+  background: #1f2933;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  color: #e5e7eb;
+}
+
+.no-matches-box h2 {
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.no-matches-box p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+@media (max-width: 480px) {
+
+  body {
+    font-size: 14px;
+  }
+
+  .nav-center {
+    max-width: 100%;
+    padding: 0 5px;
+  }
+
+  .nav-center a {
+    margin: 3px 2px;
+    font-size: 12px;
+    padding: 6px 8px;
+  }
+
+  .brand {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 18px;
+  }
+
+  .header {
+    padding: 20px 8px;
+  }
+
+  .header h1 {
+    padding: 8px 20px;
+    font-size: 18px;
+  }
+
+  .bold {
+    font-size: 12px;
+  }
+
+  .light {
+    font-size: 11px;
+  }
+
+  .section,
+  .list,
+  .article-box {
+    max-width: 95%;
+  }
+
+  .match-card {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .icon {
+    margin-bottom: 8px;
+  }
+
+  .title {
+    font-size: 13px;
+  }
+
+  .stream-box {
+    max-width: 100%;
+  }
+
+  .stream-box iframe {
+    height: 220px;
+  }
+
+  .seo-article {
+    max-width: 95%;
+    padding: 15px;
+    font-size: 13px;
+  }
+
+  .footer-links a {
+    display: inline-block;
+    margin: 4px 6px;
+    font-size: 12px;
+  }
+}
+
+
+@media (max-width: 768px) {
+
+  .nav-center {
+    max-width: 100%;
+  }
+
+  .header h1 {
+    padding: 10px 40px;
+    font-size: 20px;
+  }
+
+  .list,
+  .section,
+  .article-box {
+    max-width: 95%;
+  }
+
+  .match-card {
+    width: 100%;
+  }
+
+  .stream-box iframe {
+    height: 320px;
+  }
+}
+
+@media (max-width: 1024px) {
+
+  .nav-center {
+    max-width: 95%;
+  }
+
+  .header h1 {
+    padding: 10px 120px;
+  }
+
+  .list,
+  .section,
+  .article-box {
+    max-width: 95%;
+  }
+
+  .stream-box {
+    max-width: 95%;
+  }
+}

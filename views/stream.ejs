@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    <%= match.Team1 %> vs <%= match.Team2 %> Live Stream | <%= match.League %> on Sportsurge
+  </title>
+
+  <meta
+    name="description"
+    content="Watch <%= match.Team1 %> vs <%= match.Team2 %> live stream online in HD. Stream this <%= match.League %> matchup on Sportsurge with fast loading, multiple working links, and no signup required."
+  >
+
+  <meta
+    name="keywords"
+    content="<%= match.Team1 %> vs <%= match.Team2 %>, <%= match.Team1 %> live stream, <%= match.Team2 %> live stream, <%= match.League %> live stream, Sportsurge <%= match.League %>, free sports streaming"
+  >
+
+  <link
+    rel="canonical"
+    href="https://sportsurge.info/stream/<%= match.League.toLowerCase() %>/<%= match.MatchID %>/<%= (match.Team1 + '-vs-' + match.Team2).toLowerCase().replace(/\s+/g, '-') %>"
+  >
+
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+ <nav class="top-nav">
+    <div class="nav-center">
+
+      <a href="/" class="brand">Sportsurge</a>
+
+      <a href="/league/nfl" class="top-league">NFL</a>
+      <a href="/league/nba" class="top-league">NBA</a>
+      <a href="/league/ufc" class="top-league">UFC</a>
+      <a href="/league/mma" class="top-league">MMA</a>
+
+      <a href="/league/mlb">MLB</a>
+      <a href="/league/nhl">NHL</a>
+      <a href="/league/soccer">Soccer</a>
+      <a href="/league/cfl">CFL</a>
+      <a href="/league/wwe">WWE</a>
+
+    </div>
+  </nav>
+
+<header class="header">
+  <h1><%= match.Team1 %> vs <%= match.Team2 %> Live Stream</h1>
+  <div class="header-border"></div>
+
+  <p class="bold">
+    <%= match.League %> • <%= match.Date %> • <%= match.Time %>
+  </p>
+
+  <p class="light"><%= match.Location %></p>
+</header>
+
+<main class="list">
+
+  <div class="stream-box">
+    <iframe
+      src="<%= match.IframeURL %>"
+      allowfullscreen
+      frameborder="0">
+    </iframe>
+  </div>
+
+ <div class="seo-article">
+
+  <h2><%= match.Team1 %> vs <%= match.Team2 %> Live Stream</h2>
+
+  <p>
+    <strong><%= match.Team1 %> vs <%= match.Team2 %></strong> is an exciting
+    <%= match.League %> matchup that fans don’t want to miss. Watch the game
+    live on Sportsurge with fast-loading HD streams and smooth playback.
+    If one stream is unavailable, simply refresh or try another available option.
+  </p>
+
+  <p>
+    Sportsurge delivers free and reliable access to live
+    <%= match.League %> streams without registration or subscriptions.
+    Whether you support <%= match.Team1 %> or <%= match.Team2 %>,
+    you can enjoy uninterrupted coverage on desktop and mobile devices.
+  </p>
+
+  <p>
+    This <%= match.League %> game will be played at
+    <%= match.Location %> on <%= match.Date %>.
+    Stay connected for real-time action, live coverage, and high-quality streaming.
+  </p>
+
+  <hr>
+
+  <p class="small">
+    <em>
+      Watch <%= match.Team1 %> vs <%= match.Team2 %> live on Sportsurge —
+      your trusted source for HD <%= match.League %> live streaming.
+    </em>
+  </p>
+
+</div>
+
+</main>
+<footer class="site-footer">
+    <div class="footer-inner">
+
+      <p class="copyright">
+        © 2025 Sportsurge. All rights reserved.
+      </p>
+
+      <div class="footer-links">
+        <a href="https://buffstreams.lol/">BuffStreams</a>
+        <a href="https://streameasttv.us/">Streameast</a>
+        <a href="https://totalsportek.sbs/">Totalsportek</a>
+        <a href="https://stream2watch.cyou/">Stream2Watch</a>
+        <a href="/privacy">Privacy Policy</a>
+        <a href="/dmca">DMCA</a>
+        <a href="/contact">Contact</a>
+      </div>
+
+      <p class="powered">
+        Sportsurge provides access to live sports streams including NFL, NBA,
+        UFC, MMA, Boxing, Soccer and more.
+      </p>
+
+    </div>
+  </footer>
+</body>
+</html>
